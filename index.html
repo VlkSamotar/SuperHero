@@ -1,0 +1,80 @@
+<!-- 
+======================================================================
+PROJEKT: INTERAKTIVNÍ PROFIL SUPERHRDINY
+Tvým úkolem je pomocí JavaScriptu oživit tuto kartu hrdiny.
+Vyber si jednu ze tří úrovní podle toho, jak rychle ti to půjde!
+======================================================================
+
+🥉 ÚROVEŇ 1: Probuzení hrdiny (Téma: querySelector, innerHTML, Styly)
+----------------------------------------------------------------------
+1. Pomocí document.querySelector vyhledej nadpis s ID "jmeno-postavy".
+2. Pomocí vlastnosti "innerHTML" změň text nadpisu na jméno svého 
+   oblíbeného superhrdiny nebo herní postavy (např. "Batman").
+3. Vyhledej celou kartu (ID "karta") a změň její barvu pozadí 
+   (style.backgroundColor) na nějaký tmavý odstín, který se k hrdinovi hodí.
+
+🥈 ÚROVEŇ 2: Síla interakce (Téma: addEventListener, kliknutí a myš)
+----------------------------------------------------------------------
+1. Vyhledej tlačítko s ID "btn-schopnost" a obrázek s ID "foto".
+2. Přidej na tlačítko posluchač události "click". Zařiď, aby se po kliknutí:
+   - Obrázek postavy změnil (dostal barevný rámeček přes style.borderColor).
+   - Do odstavce s ID "status-zprava" vypsal text: "Schopnost aktivována!".
+3. BONUS: Přidej na obrázek události "mouseover" a "mouseout". 
+   Při najetí myší obrázek zvětši (style.transform = 'scale(1.1)'), 
+   při odjetí ho vrať zpět ('scale(1)').
+
+🥇 ÚROVEŇ 3: Výbava do akce (Téma: Pole, Cyklus for, vlastnost length)
+----------------------------------------------------------------------
+1. Vytvoř pole s názvem "inventar", které bude obsahovat aspoň 4 předměty, 
+   které tvůj hrdina nosí u sebe (např. ['Meč', 'Štít', 'Lektvar']).
+2. Vyhledej v DOMu prázdný seznam s ID "seznam-predmetu".
+3. Napiš cyklus "for", který projde celé tvoje pole od indexu 0 až po jeho konec 
+   (využij vlastnost inventar.length).
+4. Uvnitř cyklu zařiď, aby se pro každý předmět přidal do seznamu nový řádek.
+   (Nápověda: seznam.innerHTML += '<li>' + inventar[i] + '</li>')
+
+======================================================================
+Kódování zdar! Nezapomeň nejprve kliknout na tlačítko FORK vpravo dole.
+======================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Interaktivní profil superhrdiny</title>
+</head>
+
+<body>
+   <div class="profile-card" id="karta">
+
+      <h1 id="jmeno-postavy">Neznámý Hrdina</h1>
+      <p class="popisek">Najdi mě v DOMu a změň moje jméno!</p>
+
+
+      <div class="avatar-box">
+         <img id="foto"
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80"
+            alt="Avatar">
+      </div>
+
+
+      <button id="btn-schopnost">Aktivovat superschopnost ⚡</button>
+      <p id="status-zprava"></p>
+
+      <hr>
+
+
+      <h3>Inventář předmětů</h3>
+      <ul id="seznam-predmetu">
+
+      </ul>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>

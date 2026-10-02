@@ -1,0 +1,55 @@
+body {
+    background-color: #1a1a2e;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.profile-card {
+    background-color: #162447;
+    border: 2px solid #e43f5a;
+    border-radius: 15px;
+    padding: 30px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.popisek {
+    color: #9a9a9a;
+    font-style: italic;
+}
+
+.avatar-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: all 0.3s ease;
+    margin: 15px 0;
+}
+
+button {
+    background-color: #e43f5a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #ff4b6e;
+}
+
+ul {
+    list-style-type: square;
+    text-align: left;
+    padding-left: 40px;
+}
